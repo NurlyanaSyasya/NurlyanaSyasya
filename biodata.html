@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box}
+body {font-family: "Lato", sans-serif;}
+
+/* Style the tab */
+.tab {
+  float: left;
+  border: 1px solid #BB8FCE;
+  background-color: #F9EBEA;
+  width: 30%;
+  height: 300px;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  display: block;
+  background-color: inherit;
+  color: black;
+  padding: 22px 16px;
+  width: 100%;
+  border: none; 
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+  background-color: #BB8FCE;
+}
+
+/* Style the tab content */
+.tabcontent {
+  float: left;
+  padding: 0px 12px;
+  border: 1px solid #BB8FCE;
+  width: 70%;
+  border-left: none;
+  height: 326px;
+background-color: #F9EBEA;
+}
+.button {
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+</style>
+</head>
+<body>
+<body background="SYASYA/home1.gif">
+<center>
+<h2><b><font face="Papyrus" color="#FDFEFE" font size="7">My Biodata</font></b></h2>
+<p><img src="SYASYA/me3.jpg"></p>
+<p><font face="Comic Sans MS" font size="4">Get to know me more here &#128071;</font></p>
+<p><font face="Comic Sans MS"><a Href="mailto:syasyashahidan02@gmail.com">syasyashahidan02@gmail.com</a></font></p>
+</center>
+
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'About Me')" id="defaultOpen"><font face="Georgia">About Me</font></button>
+  <button class="tablinks" onclick="openCity(event, 'Family')"><font face="Georgia">Family</font></button>
+  <button class="tablinks" onclick="openCity(event, 'Education')"><font face="Georgia">Education</font></button>
+<button class="tablinks" onclick="openCity(event, 'Experience')"><font face="Georgia">Experience</font></button>
+<button class="tablinks" onclick="openCity(event, 'Others')"><font face="Georgia">Others</font></button>
+</div>
+
+<div id="About Me" class="tabcontent">
+<center>
+<font face="Monaco">
+  <h3>Self Introduction &#128516;</h3> 
+  <p>Hi, my name is Nurlyana Syasya binti Shahidan. I will tell you guys a little bit about myself.</p>
+<p>I'm from Taman Kuala Bekah, Penaga, Pulau Pinang. I was born on November 2, 2001. Now I'm 20 years old.</p>
+<p>I love any kind of music genre as long as I can enjoy the vibe. Here is some link toward my favorite music.</p>
+<p>
+<ul type="Square">
+<li><a href="https://www.youtube.com/watch?v=WgTMeICssXY" target="_blank">Dandelions - Ruth B.</li></a>
+<li><a href="https://www.youtube.com/watch?v=yWHrYNP6j4k" target="_blank">Stay - JB ft TheKidLaroi</li></a>
+<li><a href="https://www.youtube.com/watch?v=YfeUaxqojJU" target="_blank">I Love You So - TheWalters</li></a>
+</ul>
+</p>
+<p>I can't figure out my hobbies but I will enjoy anything I do when I'm with my family and friends.</p>
+<p>Also, I don't know about my ambition yet, but I really want to works with kids or simply doing a charity work.</p>
+<p>So, I hope, whatever in the future might hold for me will be easy enough. Not just for me but others also.</p>
+</font>
+</center>
+</div>
+
+<div id="Family" class="tabcontent">
+<center>
+<font face="Monaco">
+  <h3>My Little Family &#128151</h3>
+  <p>My family consist of 7 members. My parents and 5 siblings. I am middle child which is the number 3 of 5.</p>
+<p>Click this image to know more about them &#128151</p>
+<p><a href="family.html"><img src="SYASYA/me2.jpg"></a></p>
+</font>
+</center>
+</div>
+
+<div id="Education" class="tabcontent">
+<center>
+<font face="Monaco">
+  <h3>My Educational Life</h3>
+  <p>Firstly, anything that I achieve so far is because of the support from people around me. Without them, I am nothing. Thanks to them.</p>
+<p>Thanks to my parent whose let me to choose and learn on my own pace because they don't want to pressure me.</p>
+<p>To my friends, you guys already support me by facing the same hardship as I am and still can help each other out when needed.</p>
+<p>Trust me, everything we have learned will always be worth it in the end even if it just a little information we gain.</p>
+<p>You can click this emoji below to see the details of my education.</p>
+<p><a href="education.html"><span style='font-size:50px;'>&#9997;</span></a></p>
+</font>
+</center>
+</div>
+
+<div id="Experience" class="tabcontent">
+<center>
+<font face="Monaco">
+  <h3>My Life Experience</h3>
+  <p>One experience that I consider as a great memories is when I working as a shop assistant at local store, 7-Eleven, after finishing my highschool. It might seems as a small experience, but for me, it teach me a lot during working such as in handling customer which need a great amount of patience. There might be sometime where I feel down and can't take it anymore, I always remember that it will not always be easy. So, keep our professionality and don't mix up our personal life and work. Nevertheless, there is still some fun memories I could remember such as when working with your friend, it will always be fun even if you're tired.</p>
+<p>To know more about it, do click this button down here.</p>
+<p><a href="experience.html"><button class="button"><span>Let's go</span></button></a></p>
+</font>
+</center>
+</div>
+
+<div id="Others" class="tabcontent">
+<font face="Monaco">
+  <h3>Contact Me</h3>
+<center>
+  <p><a href="https://www.tiktok.com/@nnurlyana93?" target="_blank"><img src="SYASYA/tiktok.png" width="40" height="40"><font face="Comic Sans MS">TIKTOK</font></a>
+<a href="https://twitter.com/Syaaa93?t=GB--StinTAEJt4hihlR3MA&s=09" target="_blank"><img src="SYASYA/twitter.png" width="40" height="40"><font face="Comic Sans MS">TWITTER</font></a>
+<a href="https://api.whatsapp.com/send?phone=60149022549" target="_blank"><img src="SYASYA/whatsapp.png" width="40" height="40"><font face="Comic Sans MS">WHATSAPP</font></a>
+<a href="https://www.instagram.com/nnurlyana_/" target="_blank"><img src="SYASYA/instagram1.png" width="40" height="40"><font face="Comic Sans MS">INSTAGRAM</font></a>
+<a href="https://www.facebook.com/nurlyana.syasya.7/" target="_blank"><img src="SYASYA/facebook.png" width="45" height="45"><font face="Comic Sans MS">FACEBOOK</font></a>
+</center>
+<h3>Gallery</h3>
+<center>
+<iframe src="gallery.html" height="150" width="300" title="GALLERY"></iframe>
+</center>
+</font>
+</div>
+
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+   
+</body>
+</html> 

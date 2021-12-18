@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #212F3C;
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="about-section">
+  <h1><font face="Papyrus" font size="7"><b>Family of Shahidan</b></font></h1>
+  <p><font face="Monaco" font size="4">Get to know about my little happy family</font></p>
+<a href="#father"><font color="#73C6B6">Shahidan Baharom</font></a> |
+ <a href="#mother"><font color="#73C6B6">Maslinda Azahari</font></a> |
+ <a href="#brother"><font color="#73C6B6">Muhd Nur Irfan</font></a> |
+ <a href="#sister"><font color="#73C6B6">Fatin Syazwina</font></a> |
+ <a href="#brother1"><font color="#73C6B6">Muhd Nur Hafiz</font></a> |
+ <a href="#brother2"><font color="#73C6B6">Ahmad Qayyim Amsyar</font></a>
+</div>
+
+<h2 style="text-align:center"><font face="Papyrus">Our Members</font></h2>
+
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="SYASYA/abah.jpg" alt="Dad" style="width:100%">
+      <div class="container">
+        <h2><a name="father">Shahidan Baharom</a></h2>
+        <p class="title">Head of Family/Father (53 Years Old)</p>
+        <p><font face="Forte">I am a cool and chill dad</font></p>
+        <p>Working as a bank clerk at CIMB Pulau Pinang.</p>
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="SYASYA/mama.jpg" alt="Mom" style="width:100%">
+      <div class="container">
+        <h2><a name="mother">Maslinda Azahari</a></h2>
+        <p class="title">Mother (48 Years Old)</p>
+        <p><font face="Forte">I am a SuperMom</font></p>
+        <p>Fulltime housewife but sometimes running her cooking business (Deliciously From My Oven).</p>
+        
+      </div>
+    </div>
+  </div>
+  
+<div class="column">
+    <div class="card">
+      <img src="SYASYA/abang.jpg" alt="Brother" style="width:100%">
+      <div class="container">
+        <h2><a name="brother">Muhd Nur Irfan</a></h2>
+        <p class="title">Brother (25 Years Old)</p>
+        <p><font face="Forte">The only one married between the siblings</font></p>
+        <p>Working as Poslaju delivery man and his wife is Aina.</p>
+       
+      </div>
+    </div>
+  </div>
+<br>
+<br>
+
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="SYASYA/kakak.jpg" alt="Sister" style="width:100%">
+      <div class="container">
+        <h2><a name="sister">Fatin Syazwina</a></h2>
+        <p class="title">Sister (23 Years Old)</p>
+        <p><font face="Forte">Single but not available</font></p>
+        <p>Working as occupational theraphist (OT) at Pusat Terapi Erat. Contact here: 014-389 3500.</p>
+        
+      </div>
+    </div>
+  </div>
+
+<div class="column">
+    <div class="card">
+      <img src="SYASYA/apit.jpg" alt="Younger Brother 1" style="width:100%">
+      <div class="container">
+        <h2><a name="brother1">Muhd Nur Hafiz</a></h2>
+        <p class="title">Younger Brother <sup>(1)</sup> (17 Years Old)</p>
+        <p><font face="Forte">Your future husband</font></p>
+        <p>In shotput sportsclub in SMK MI.</p>
+        
+      </div>
+    </div>
+  </div>
+
+<div class="column">
+    <div class="card">
+      <img src="SYASYA/ayim.jpg" alt="Younger Brother 2" style="width:100%">
+      <div class="container">
+        <h2><a name="brother2">Ahmad Qayyim Amsyar</a></h2>
+        <p class="title">Younger Brother <sup>(2)</sup> (14 Years Old)</p>
+        <p><font face="Forte">Future football star</font></p>
+        <p>In football sportsclub in SMK MI.</p>
+        
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
